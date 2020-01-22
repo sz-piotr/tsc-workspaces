@@ -1,0 +1,18 @@
+version: 2.1
+
+jobs:
+  all:
+    docker:
+      - image: circleci/node:11.15
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn build
+      - run: yarn test
+      - run: yarn start
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - all
