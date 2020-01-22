@@ -1,0 +1,24 @@
+{
+  "name": "@boo/foo",
+  "private": true,
+  "version": "2.0.0",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "test": "mocha -r ts-node/register/transpile-only --extension ts 'test/**/*.test.ts'",
+    "start": "node dist/src/index.js"
+  },
+  "dependencies": {
+    "@boo/bar": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}

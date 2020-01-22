@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "es2017",
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist"
+  },
+  "references": [
+    { "path": "../bar" }
+  ]
+}

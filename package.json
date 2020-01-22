@@ -1,0 +1,16 @@
+{
+  "name": "foobar",
+  "private": true,
+  "workspaces": [
+    "foo",
+    "bar"
+  ],
+  "scripts": {
+    "start": "cd foo && yarn start",
+    "build": "wsrun -te -c build",
+    "test": "wsrun -c test"
+  },
+  "devDependencies": {
+    "wsrun": "^5.2.0"
+  }
+}
